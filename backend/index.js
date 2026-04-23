@@ -39,7 +39,7 @@ app.post("/books", (req, res) => {
 
   const values = [
     req.body.title,
-    req.body.description,
+    req.body.desc,
     req.body.price,
     req.body.cover,
   ];
@@ -66,7 +66,7 @@ app.put("/books/:id", (req, res) => {
 
   const values = [
     req.body.title,
-    req.body.description,
+    req.body.desc,
     req.body.price,
     req.body.cover,
   ];
