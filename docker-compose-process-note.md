@@ -80,3 +80,14 @@ You should now see something like:
 github.com/docker/buildx v0.18.0
 -- then search the public-ip:84 port in broswer you will get the appliaction deployment then add the book
     --------------------------THANKYOU------------------------------------------------------------
+
+    • buildx install process
+
+mkdir -p ~/.docker/cli-plugins
+
+curl -L https://github.com/docker/buildx/releases/download/v0.33.0/buildx-v0.33.0.linux-amd64 \
+  -o ~/.docker/cli-plugins/docker-buildx
+
+chmod +x ~/.docker/cli-plugins/docker-buildx
+
+docker buildx version
